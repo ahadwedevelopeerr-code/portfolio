@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Student Registration Form | Ahad</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #071326;
+        color: #eef7ff;
+        font: 15px Arial;
+        padding: 25px;
+      }
+      .card {
+        max-width: 650px;
+        margin: 30px auto;
+        padding: 28px;
+        background: #10243b;
+        border: 1px solid #24506c;
+        border-radius: 12px;
+      }
+      h1 {
+        color: #36d5f0;
+      }
+      label {
+        display: block;
+        margin: 15px 0 6px;
+        color: #b9d7e8;
+      }
+      input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #42647c;
+        border-radius: 6px;
+        background: #071729;
+        color: white;
+      }
+      button {
+        margin-top: 20px;
+        padding: 12px 20px;
+        background: #00a9d0;
+        border: 0;
+        color: white;
+        border-radius: 6px;
+      }
+      small {
+        color: #91a9bf;
+      }
+    </style>
+  </head>
+  <body>
+    <form
+      class="card"
+      onsubmit="
+        event.preventDefault();
+        document.getElementById('result').textContent =
+          'Practice form submitted successfully (demo).';
+      "
+    >
+      <h1>Student Registration Form</h1>
+      <small>HTML form practice — demo only, no data is sent to a server.</small
+      ><label>Full Name</label
+      ><input required placeholder="Enter full name" /><label>Father Name</label
+      ><input placeholder="Enter father name" /><label>Email</label
+      ><input type="email" required placeholder="name@example.com" /><label
+        >Phone Number</label
+      ><input type="tel" placeholder="03xx-xxxxxxx" /><label>City</label
+      ><input placeholder="Your city" /><label>Country</label
+      ><input placeholder="Your country" /><label>Username</label
+      ><input placeholder="Choose username" /><label>Address</label
+      ><input placeholder="Your address" /><button type="submit">Submit</button>
+      <p id="result" aria-live="polite"></p>
+    </form>
+  </body>
+</html>

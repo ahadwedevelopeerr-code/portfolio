@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>HTML Form Elements | Ahad</title>
+    <style>
+      body {
+        background: #071326;
+        color: #edf7ff;
+        font: 15px Arial;
+        padding: 25px;
+      }
+      .box {
+        max-width: 650px;
+        margin: auto;
+        padding: 25px;
+        background: #10243b;
+        border: 1px solid #24506c;
+        border-radius: 12px;
+      }
+      h1 {
+        color: #36d5f0;
+      }
+      label {
+        display: block;
+        margin: 13px 0 6px;
+      }
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        background: #071729;
+        color: white;
+        border: 1px solid #42647c;
+        border-radius: 5px;
+      }
+      input[type="radio"],
+      input[type="checkbox"] {
+        width: auto;
+        margin-right: 8px;
+      }
+      button {
+        padding: 11px 18px;
+        background: #00a9d0;
+        border: 0;
+        color: white;
+        border-radius: 5px;
+        margin-top: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <form
+      class="box"
+      onsubmit="
+        event.preventDefault();
+        alert('Form practice submitted (demo).');
+      "
+    >
+      <h1>HTML Form Elements</h1>
+      <label for="username">Username</label
+      ><input
+        id="username"
+        name="username"
+        placeholder="Enter your name"
+      /><label for="color">Choose Color</label
+      ><select id="color" name="color">
+        <option value="">Choose Color</option>
+        <option>Red</option>
+        <option>Blue</option>
+        <option>Green</option></select
+      ><label for="feedback">Feedback</label
+      ><textarea id="feedback" rows="3"></textarea><label>Gender</label
+      ><label><input type="radio" name="gender" value="male" />Male</label
+      ><label><input type="radio" name="gender" value="female" />Female</label
+      ><label>Hobbies</label
+      ><label
+        ><input type="checkbox" name="hobby" value="cricket" />Cricket</label
+      ><label><input type="checkbox" name="hobby" value="music" />Music</label
+      ><label for="photo">Choose image</label
+      ><input id="photo" type="file" accept="image/*" /><label for="date"
+        >Date</label
+      ><input id="date" type="date" /><button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

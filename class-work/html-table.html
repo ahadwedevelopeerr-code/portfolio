@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>HTML Table Practice | Ahad</title>
+    <style>
+      body {
+        background: #071326;
+        color: #edf7ff;
+        font: 15px Arial;
+        padding: 25px;
+      }
+      .box {
+        max-width: 700px;
+        margin: auto;
+        padding: 25px;
+        background: #10243b;
+        border: 1px solid #24506c;
+        border-radius: 12px;
+      }
+      h1 {
+        color: #36d5f0;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        border: 1px solid #4a6d87;
+        padding: 12px;
+        text-align: left;
+      }
+      th {
+        background: #07577a;
+      }
+      tr:nth-child(even) {
+        background: #172f49;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="box">
+      <h1>HTML Table Practice</h1>
+      <p>Example table using table, thead, tbody, rowspan and colspan.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>City</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">1</td>
+            <td>Ali</td>
+            <td rowspan="2">Lodhran</td>
+          </tr>
+          <tr>
+            <td>Ahad</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Ahmed</td>
+            <td>Multan</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
